@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Barlow, Chivo, Gelasio, Lato, Open Sans, Roboto Slab, Space Mono */
+/* Combos: Barlow + Chivo, Barlow + Lato, Barlow + Open Sans, Barlow + Roboto Slab, Barlow + Space Mono
+
+1. Lato
+2. Chivo
+3. Roboto Slab + Chivo
+
+
+*/
+* {
+  font-family: "Chivo";
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+ul {
+  list-style-type: none;
+}
+
+#root,
+body,
+main {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+}
+
+#background {
+  /* background-image: url(../public/gradient_4.png);
+  position: fixed; */
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.blurred {
+  filter: blur(5px) brightness(40%);
+}

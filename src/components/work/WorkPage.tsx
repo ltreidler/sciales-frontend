@@ -52,7 +52,6 @@ export const WorkPage = ({ category }: { category: Category }) => {
   useEffect(() => {
     setError(null);
     setImageStatus(false);
-    console.log(pages);
   }, [slug]);
 
   useEffect(() => {

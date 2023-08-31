@@ -22,13 +22,13 @@ type NavLinkProps = StyledNavLinkProps & {
 export const StyledNavLink = styled.p(
   ({ isActive, size }: StyledNavLinkProps) =>
     mq({
-      fontSize: size === "large" ? [20, 20, 16, 17] : [15, 15, 14, 13, 14],
+      fontSize: size === "large" ? [23, 23, 25, 17] : [17, 17, 18, 13, 14],
       fontWeight: size === "large" ? fontWeights.medium : fontWeights.regular,
       transition: "0.2s",
       color: isActive ? active : dark,
       fontFamily: "Chivo",
       textTransform: "uppercase",
-      margin: (size === "large" ? "5vh" : "0.5rem") + " 0.5rem 0 0.5rem",
+      margin: (size === "large" ? "5vh" : "0.75rem") + " 0.5rem 0 0.5rem",
       "&:hover": {
         color: light,
       },

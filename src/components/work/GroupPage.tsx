@@ -120,9 +120,9 @@ const ImageColumn = ({
           key={i}
           src={urls[size]}
           maxWidth={
-            maxWidth || ["80vw", "80vw", "70vw", "70vw", "35vw", "35vw"]
+            maxWidth || ["70vw", "70vw", "70vw", "70vw", "35vw", "35vw"]
           }
-          minWidth="24rem"
+          minWidth="20rem"
           alt={altText}
         />
       ))}

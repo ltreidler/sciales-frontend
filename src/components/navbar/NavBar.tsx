@@ -1,10 +1,12 @@
 /** @jsxImportSource @emotion/react */
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, MouseEvent } from "react";
 import { css } from "@emotion/react";
 import { mq, colors } from "../emotion/global";
 import { Logo } from "..";
 import { useLocation } from "react-router-dom";
 import { NavLinks } from "./NavLinks";
+import { close } from "fs";
+import { kMaxLength } from "buffer";
 const { nearBlack } = colors;
 
 export interface NavBarProps {
@@ -48,6 +50,25 @@ export const NavBar = (props: NavBarProps) => {
     else setShow({ ...show, [type]: !show[type] });
   };
 
+  const closeOnClick: EventListenerOrEventListenerObject = (e) => {
+    if (!toggleMenu) return;
+    const target = e.target;
+    if (target === document.querySelector(".toggle")) return;
+    const nav = document.querySelector("nav");
+
+    if (nav && !nav.contains(target as Node)) {
+      setToggleMenu(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", closeOnClick);
+
+    return () => {
+      document.removeEventListener("click", closeOnClick);
+    };
+  }, [toggleMenu]);
+
   const mobileCss = css(
     mq({
       display: ["block", "block", "block", "none"],
@@ -80,20 +101,13 @@ export const NavBar = (props: NavBarProps) => {
   return (
     <section css={{ transition: "0.3s" }}>
       <Logo />
-      {/* <i
-        className={`fa-sharp fa-solid fa-${toggleMenu ? "x" : "bars"} fa-4x`}
-        css={[toggleCss, mobileCss]}
-        onClick={() => setToggleMenu(!toggleMenu)}
-      ></i> */}
       <span
-        className="material-symbols-outlined"
+        className="material-symbols-outlined toggle"
         css={[toggleCss, mobileCss]}
         onClick={() => setToggleMenu(!toggleMenu)}
       >
         {!toggleMenu ? "menu" : "close"}
       </span>
-      {/* <Nav cssStyle={mobileCss} />
-      <Nav cssStyle={desktopCss} /> */}
       <NavLinks type="mobile" {...navProps} />
       <NavLinks type="desktop" {...navProps} />
     </section>

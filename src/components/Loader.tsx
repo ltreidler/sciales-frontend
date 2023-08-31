@@ -8,7 +8,7 @@ export const Loader = ({ loading }: { loading: boolean }) => {
     zIndex: 10,
     position: "fixed",
     top: "40%",
-    left: "50%",
+    margin: "auto",
   });
 
   return (

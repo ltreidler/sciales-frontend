@@ -36,7 +36,7 @@ export const NovelPage = ({ pageData, pageMedia, tabName }: NovelPageType) => {
       <article css={articleStyles}>
         <DetailsComponent details={details} width={["30%"]} />
         <Column width="60%">
-          <StyledImage src={cover?.urls.medium} maxHeight="40rem" />
+          <StyledImage src={cover?.urls.medium} maxWidth="30vw" />
           <StyledButton onClick={() => setShowPages(!showPages)}>
             {!showPages ? "Preview book" : "Close"}
           </StyledButton>

@@ -14,7 +14,6 @@ import { selectPages } from "./redux/pagesSlice";
 import { PageContainer } from "./components/emotion";
 
 function App() {
-  console.log("MOUNTING...");
   const dispatch = useAppDispatch();
   const { comics, illustrations, status, error } = useAppSelector(selectPages);
 

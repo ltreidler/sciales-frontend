@@ -65,6 +65,8 @@ export const WorkPage = ({ category }: { category: Category }) => {
         setPageType(foundPage.type);
         currentPage = { index: idx, category };
         fetchPage(foundPage);
+      } else {
+        setError("Page not found");
       }
       dispatch(setCurrentPage(currentPage));
     } else setError("Error fetching data");
@@ -108,7 +110,7 @@ export const WorkPage = ({ category }: { category: Category }) => {
 
   return (
     <section css={pagesCss} ref={ref}>
-      {!!pageData ? (
+      {!!pageData && (
         <div css={{ opacity: imageStatus ? 1 : 0 }}>
           <div css={{ minHeight: "80vh" }}>
             {pageType === "singles" && (
@@ -125,11 +127,8 @@ export const WorkPage = ({ category }: { category: Category }) => {
             <ArrowButtons />
           </span>
         </div>
-      ) : (
-        <>{error && <Error error={error} />}</>
       )}
-
-      <Loader loading={!imageStatus} />
+      {error ? <Error error={error} /> : <Loader loading={!imageStatus} />}
     </section>
   );
 };

@@ -6,6 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { store } from "./redux/";
 import { BrowserRouter as Router } from "react-router-dom";
+import axios from "axios";
+
+//set axios base url
+axios.defaults.baseURL = "https://sciales-cms-fab6f9149681.herokuapp.com";
+
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

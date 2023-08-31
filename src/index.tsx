@@ -9,8 +9,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import axios from "axios";
 
 //set axios base url
-axios.defaults.baseURL = "https://sciales-cms-fab6f9149681.herokuapp.com";
-
+axios.defaults.baseURL = process.env.REACT_APP_PROXY_URL;
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

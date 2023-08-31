@@ -93,6 +93,10 @@ export const ArrowButtons = () => {
     setPrev(queriesArray[startingIndex - 1]);
   };
 
+  const scroll = () => {
+    window.scrollTo({ top: 0 });
+  };
+
   return (
     <StyledBtnSection>
       <div>
@@ -103,6 +107,7 @@ export const ArrowButtons = () => {
               aria-label="Previous page"
               id="prev"
               width="9rem"
+              onClick={scroll}
             >
               <LeftArrow />
               Previous
@@ -118,6 +123,7 @@ export const ArrowButtons = () => {
               aria-label="Next page"
               id="next"
               width="9rem"
+              onClick={scroll}
             >
               Next
               <RightArrow />

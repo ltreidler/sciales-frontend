@@ -32,7 +32,7 @@ export const NavBar = (props: NavBarProps) => {
   //close the mobile menu when the page changes
   useEffect(() => {
     setToggleMenu(false);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0 });
   }, [path1, path2]);
 
   //DESKTOP & MOBILE:

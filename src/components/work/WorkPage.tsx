@@ -52,10 +52,12 @@ export const WorkPage = ({ category }: { category: Category }) => {
   useEffect(() => {
     setError(null);
     setImageStatus(false);
+    console.log(pages);
   }, [slug]);
 
   useEffect(() => {
     let currentPage = null;
+    if (!pages.comics.length && !pages.illustrations.length) return;
     if (pages[category]) {
       const idx = pages[category].findIndex(
         ({ tabName }) => createSlug(tabName) === slug

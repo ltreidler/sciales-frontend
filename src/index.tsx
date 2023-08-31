@@ -14,9 +14,11 @@ axios.defaults.baseURL = process.env.REACT_APP_PROXY_URL;
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
+const enviro = process.env.NODE_ENV;
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={enviro !== "production" ? "/sciales-frontend" : "/"}>
       <Provider store={store}>
         <App />
       </Provider>

@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(
 const enviro = process.env.NODE_ENV;
 root.render(
   <React.StrictMode>
-    <Router basename={enviro !== "production" ? "/sciales-frontend" : "/"}>
+    <Router basename={enviro === "production" ? `/sciales-frontend` : "/"}>
       <Provider store={store}>
         <App />
       </Provider>

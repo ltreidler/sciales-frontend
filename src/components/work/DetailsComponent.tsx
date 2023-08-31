@@ -19,7 +19,7 @@ export const DetailsComponent = ({ details, width }: Props) => {
       justifyContent: "flex-start",
       alignItems: "flex-start",
       marginBottom: "1rem",
-      marginTop: "4rem",
+      marginTop: [0, 0, "1rem", "4rem"],
       padding: "0.5rem",
     })
   );

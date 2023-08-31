@@ -46,7 +46,7 @@ export const NavLinks = ({
       height: ["90vh", "90vh", "90vh", "60vh"],
       justifyContent: "flex-start",
       alignItems: ["flex-end", "flex-end", "flex-end", "flex-start"],
-      width: ["50vw", "40vw", "40vw", "20vw"],
+      width: ["50vw", "50vw", "50vw", "20vw"],
       transform: [translateVal, translateVal, translateVal, "none"],
       backgroundColor: [nearWhite, nearWhite, nearWhite, "transparent"],
       top: [0, 0],

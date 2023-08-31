@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { store } from "./redux/";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router, BrowserRouter } from "react-router-dom";
 import axios from "axios";
 
 //set axios base url
@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(
 const enviro = process.env.NODE_ENV;
 root.render(
   <React.StrictMode>
-    <Router basename={enviro === "production" ? `/sciales-frontend` : "/"}>
+    <Router basename="/">
       <Provider store={store}>
         <App />
       </Provider>

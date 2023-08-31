@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sciales-frontend/static/css/main.c5a74046.css",
-    "main.js": "/sciales-frontend/static/js/main.12ae306d.js",
+    "main.js": "/sciales-frontend/static/js/main.3be825d0.js",
     "static/js/787.cda612ba.chunk.js": "/sciales-frontend/static/js/787.cda612ba.chunk.js",
     "index.html": "/sciales-frontend/index.html",
     "main.c5a74046.css.map": "/sciales-frontend/static/css/main.c5a74046.css.map",
-    "main.12ae306d.js.map": "/sciales-frontend/static/js/main.12ae306d.js.map",
+    "main.3be825d0.js.map": "/sciales-frontend/static/js/main.3be825d0.js.map",
     "787.cda612ba.chunk.js.map": "/sciales-frontend/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5a74046.css",
-    "static/js/main.12ae306d.js"
+    "static/js/main.3be825d0.js"
   ]
 }

@@ -45,8 +45,8 @@ export const Landing = () => {
   const landingStyles = css(
     mq({
       marginTop: ["30%", "20%", "10%", "30%", "15%"],
-      maxWidth: ["98vw", "98vw", "90vw", "90vw"],
-      width: "100%",
+      maxWidth: ["90vw", "90vw", "90vw", "90vw"],
+      width: "fit-content",
       display: "flex",
       justifyContent: "center",
     })
@@ -70,7 +70,7 @@ export const Landing = () => {
                 alt={image.altText}
                 aspectRatio="914 / 344"
                 minWidth={[
-                  "30rem",
+                  "21rem",
                   "30rem",
                   "30rem",
                   "40rem",

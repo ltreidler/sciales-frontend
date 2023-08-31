@@ -22,6 +22,10 @@ export const NovelPage = ({ pageData, pageMedia, tabName }: NovelPageType) => {
     setPagesArr(parsePages(pages));
   }, [pageData, coverPage, pages]);
 
+  useEffect(() => {
+    if (showPages) window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [showPages]);
+
   const articleStyles = css(
     mq({
       display: "flex",
@@ -36,7 +40,11 @@ export const NovelPage = ({ pageData, pageMedia, tabName }: NovelPageType) => {
       <article css={articleStyles}>
         <DetailsComponent details={details} width={["30%"]} />
         <Column width="60%">
-          <StyledImage src={cover?.urls.medium} maxWidth="30vw" />
+          <StyledImage
+            src={cover?.urls.medium}
+            minWidth={["20rem", "25rem"]}
+            maxWidth="20rem"
+          />
           <StyledButton onClick={() => setShowPages(!showPages)}>
             {!showPages ? "Preview book" : "Close"}
           </StyledButton>

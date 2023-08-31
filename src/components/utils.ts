@@ -4,7 +4,6 @@ export const checkImageStatus = (
 ) => {
   const updateStatus = (images: HTMLImageElement[]) => {
     const imagesLoaded = images.every((image) => image.complete);
-    console.log("image status change!");
     setImageStatus(imagesLoaded);
   };
 
@@ -12,8 +11,6 @@ export const checkImageStatus = (
   const images = Array.from(document.querySelectorAll("img")).filter(
     ({ className }) => className !== "css-nvihev-Logo"
   );
-
-  console.log(images);
 
   if (images.length === 0) setImageStatus(true);
 

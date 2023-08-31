@@ -110,6 +110,7 @@ export const WorkPage = ({ category }: { category: Category }) => {
 
   return (
     <section css={pagesCss} ref={ref}>
+      {!!error ? <Error error={error} /> : <Loader loading={!imageStatus} />}
       {!!pageData && (
         <div css={{ opacity: imageStatus ? 1 : 0 }}>
           <div css={{ minHeight: "80vh" }}>
@@ -128,7 +129,6 @@ export const WorkPage = ({ category }: { category: Category }) => {
           </span>
         </div>
       )}
-      {error ? <Error error={error} /> : <Loader loading={!imageStatus} />}
     </section>
   );
 };

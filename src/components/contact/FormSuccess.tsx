@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { H3, Body, H4 } from "../emotion";
-import React from "react";
+import { H3, H4 } from "../emotion";
 import { css } from "@emotion/react";
 import { mq, colors } from "../emotion/global";
 

@@ -2,7 +2,7 @@
 import { NavLink as Link } from "react-router-dom";
 import { mq, colors, fontWeights } from "./global";
 import styled from "@emotion/styled";
-import { createSlug, capitalize } from "../../utils";
+import { createSlug } from "../../utils";
 import { css } from "@emotion/react";
 
 const { dark, light, active } = colors;

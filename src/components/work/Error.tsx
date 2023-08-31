@@ -1,4 +1,4 @@
-import { H3, H2, H4, Body } from "../emotion";
+import { H3, H2 } from "../emotion";
 import { Link } from "react-router-dom";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";

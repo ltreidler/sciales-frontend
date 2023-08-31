@@ -4,7 +4,7 @@ import { mq } from "../emotion/global";
 import { ApiBioPage, BioPageType } from "../../types";
 import axios, { AxiosResponse } from "axios";
 import { useEffect, useState } from "react";
-import { H1, H2, H3, Body } from "../emotion";
+import { H2, Body } from "../emotion";
 import { EventList } from "./EventList";
 import { ErrorPage } from "../ErrorPage";
 

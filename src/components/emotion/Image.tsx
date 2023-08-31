@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import { mq } from "./global";
-import { Image } from "../../types";
 
 interface ImageProps {
   maxWidth?: string | string[];

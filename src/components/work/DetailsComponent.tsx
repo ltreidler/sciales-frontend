@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { mq } from "../emotion/global";
-import { Image, GroupPageType, Details } from "../../types";
-import { H3, Body, Column } from "../emotion";
+import { Details } from "../../types";
+import { H3, Body } from "../emotion";
 
 interface Props {
   details: Details | null;

@@ -8,8 +8,6 @@ import {
   ApiWorkCollection,
 } from "../types/";
 
-const contentTypes: AllContentTypes[] = ["groups", "singles", "novels"];
-
 interface CurrentPage {
   index: number;
   category: PageCategory;

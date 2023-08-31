@@ -13,14 +13,14 @@ export const GroupPage = ({ pageData, pageMedia }: GroupPageType) => {
   const [details, setDetails] = useState<Details | null>(null);
   const [images, setImages] = useState<Image[] | null>(null);
 
-  useEffect(() => {
-    if (pageData && imagesData) formatData();
-  }, [pageData, imagesData]);
-
   const formatData = () => {
     setImages(parseImageArray(imagesData));
     setDetails(parsePageData(pageData));
   };
+
+  useEffect(() => {
+    if (pageData && imagesData) formatData();
+  }, [pageData, imagesData]);
 
   const listStyles = css(
     mq({

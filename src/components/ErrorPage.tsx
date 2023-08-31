@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import { colors } from "./emotion/global";
-import { H2, H3, H4, Body } from "./emotion/Text";
+import { H2, H3 } from "./emotion/Text";
 
 const { dark, light } = colors;
 

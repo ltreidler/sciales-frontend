@@ -1,5 +1,3 @@
-import { RefObject, useState, useEffect } from "react";
-
 //takes in a ref to a wrapper & a way to set status
 export const checkImageStatus = (
   setImageStatus: React.Dispatch<React.SetStateAction<boolean>>

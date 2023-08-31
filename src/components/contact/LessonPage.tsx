@@ -8,7 +8,6 @@ import { FormProvider, useForm } from "react-hook-form";
 import { ContactForm } from "./ContactForm";
 import { FormValues } from "../../types";
 import { ErrorPage } from "../ErrorPage";
-import { checkImageStatus } from "../utils";
 import { Loader } from "../Loader";
 
 export const LessonPage = () => {

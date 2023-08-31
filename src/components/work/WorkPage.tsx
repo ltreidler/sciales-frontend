@@ -17,8 +17,8 @@ import {
 } from "../../types";
 import { SinglePage, GroupPage, NovelPage } from "./";
 import { setCurrentPage } from "../../redux/pagesSlice";
-import { ArrowButtons, H2 } from "../emotion";
-import { mq, colors } from "../emotion/global";
+import { ArrowButtons } from "../emotion";
+import { mq } from "../emotion/global";
 import { Error } from "./Error";
 import { checkImageStatus } from "../utils";
 import { Loader } from "../Loader";
@@ -52,7 +52,6 @@ export const WorkPage = ({ category }: { category: Category }) => {
   useEffect(() => {
     setError(null);
     setImageStatus(false);
-    console.log(pageData);
   }, [slug]);
 
   useEffect(() => {
@@ -106,13 +105,6 @@ export const WorkPage = ({ category }: { category: Category }) => {
       marginRight: [...Array(4).fill("0"), "10rem"],
     })
   );
-
-  const loadingCss = css({
-    zIndex: 10,
-    position: "fixed",
-    top: "40%",
-    left: "50%",
-  });
 
   return (
     <section css={pagesCss} ref={ref}>

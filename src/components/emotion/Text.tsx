@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import styled from "@emotion/styled";
-import { css } from "@emotion/react";
 import { colors, mq } from "./global";
 import { fontWeights, headerFont, bodyFont } from "./global";
 

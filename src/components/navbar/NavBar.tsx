@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { useState, useMemo, memo, useEffect } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { css } from "@emotion/react";
 import { mq, colors } from "../emotion/global";
 import { Logo } from "..";

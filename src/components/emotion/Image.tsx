@@ -3,10 +3,7 @@ import { mq } from "./global";
 import { Image } from "../../types";
 
 interface ImageProps {
-  maxHeight?: string | string[];
-  minHeight?: string | string[];
   maxWidth?: string | string[];
-  height?: string | string[];
   width?: string | string[];
   aspectRatio?: string | string[];
   minWidth?: string | string[];
@@ -14,10 +11,7 @@ interface ImageProps {
 
 export const StyledImage = styled.img(
   ({
-    maxHeight = "90vh",
     maxWidth = "100%",
-    height = "",
-    minHeight = "",
     width = "",
     aspectRatio = "",
     minWidth = "25rem",

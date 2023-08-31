@@ -80,7 +80,7 @@ export const LessonPage = () => {
   const imageStyles = css(
     mq({
       minWidth: "15rem",
-      width: [...Array(4).fill("80%"), "70%", "50%"],
+      width: [...Array(4).fill("80%"), "70%", "47%"],
     })
   );
 

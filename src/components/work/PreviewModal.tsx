@@ -13,19 +13,30 @@ import {
 
 const modalStyles = css(
   mq({
-    position: "fixed",
-    top: 0,
+    position: "absolute",
+    top: "0.5rem",
     left: 0,
     right: 0,
+    bottom: 0,
     zIndex: 2,
     margin: "auto",
     width: "100vw",
-    height: "100vh",
-    backgroundColor: "rgb(0,0,0,0.8)",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
+  })
+);
+
+const divStyles = css(
+  mq({
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 2,
+    backgroundColor: "rgb(0,0,0,0.8)",
   })
 );
 
@@ -66,31 +77,34 @@ export const PreviewModal = ({ pages, close, title }: PreviewProps) => {
   };
 
   return (
-    <aside css={modalStyles} onClick={closeOnClick}>
-      <StyledButton onClick={close}>Close</StyledButton>
-      <StyledImage
-        css={{ zIndex: 4 }}
-        src={pages[currentPage].urls.medium}
-        alt={`Page ${currentPage + 1} of ${title}`}
-        height="80vh"
-      />
-      <StyledBtnSection>
-        <div>
-          {currentPage > 0 && (
-            <StyledButton aria-label="Previous page" onClick={handlePrev}>
-              <LeftArrow />
-              Prev Page
-            </StyledButton>
-          )}
-        </div>
-        <div>
-          {currentPage < pages.length - 1 && (
-            <StyledButton aria-label="Next page" onClick={handleNext}>
-              Next Page <RightArrow />
-            </StyledButton>
-          )}
-        </div>
-      </StyledBtnSection>
-    </aside>
+    <>
+      <div css={divStyles}></div>
+      <aside css={modalStyles} onClick={closeOnClick}>
+        <StyledButton onClick={close}>Close</StyledButton>
+        <StyledImage
+          css={{ zIndex: 4 }}
+          src={pages[currentPage].urls.medium}
+          alt={`Page ${currentPage + 1} of ${title}`}
+          maxWidth={["60vw", "65vw", "82vw", "55vw", "44vw", "35vw"]}
+        />
+        <StyledBtnSection>
+          <div>
+            {currentPage > 0 && (
+              <StyledButton aria-label="Previous page" onClick={handlePrev}>
+                <LeftArrow />
+                Prev Page
+              </StyledButton>
+            )}
+          </div>
+          <div>
+            {currentPage < pages.length - 1 && (
+              <StyledButton aria-label="Next page" onClick={handleNext}>
+                Next Page <RightArrow />
+              </StyledButton>
+            )}
+          </div>
+        </StyledBtnSection>
+      </aside>
+    </>
   );
 };

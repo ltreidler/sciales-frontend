@@ -39,9 +39,7 @@ export const SinglePage = ({ pageData, pageMedia }: SinglePageType) => {
           <StyledImage
             src={image.urls[image.size]}
             alt={image.altText}
-            maxHeight="110vh"
-            minHeight="40rem"
-            minWidth="20rem"
+            minWidth="15rem"
           />
         </div>
       )}

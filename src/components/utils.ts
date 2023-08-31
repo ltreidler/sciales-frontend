@@ -17,6 +17,8 @@ export const checkImageStatus = (
 
   if (images.length === 0) setImageStatus(true);
 
+  updateStatus(images);
+
   //   //add event listeners to each image that checks if all images have loaded, then sets the status to true if so
   images.forEach((image) => {
     image.addEventListener("load", () => updateStatus(images), {

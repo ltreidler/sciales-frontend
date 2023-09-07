@@ -60,6 +60,7 @@ export const StyledBtnSection = styled.section(
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
+    margin: "0 5rem",
   })
 );
 

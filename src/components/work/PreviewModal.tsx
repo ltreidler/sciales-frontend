@@ -85,8 +85,8 @@ export const PreviewModal = ({ pages, close, title }: PreviewProps) => {
           css={{ zIndex: 4 }}
           src={pages[currentPage].urls.medium}
           alt={`Page ${currentPage + 1} of ${title}`}
-          minWidth={["20rem", "25rem"]}
-          maxWidth="20rem"
+          minWidth={["20rem", "25rem", "30rem", "35rem"]}
+          maxWidth="70vw"
         />
         <StyledBtnSection>
           <div>

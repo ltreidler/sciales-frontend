@@ -77,7 +77,7 @@ export const NavBar = (props: NavBarProps) => {
 
   const toggleCss = css(
     mq({
-      position: "absolute",
+      position: "fixed",
       right: "1rem",
       top: "0.5rem",
       zIndex: 1,

@@ -34,7 +34,9 @@ export const EventList = ({ events }: { events: Event[] }) => {
                 </Body>
                 <Body>{description}</Body>
                 {!!link && (
-                  <StyledLink href={link}>See more details</StyledLink>
+                  <StyledLink target="_blank" href={link}>
+                    See more details
+                  </StyledLink>
                 )}
               </div>
             )

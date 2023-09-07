@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sciales-frontend/static/css/main.c5a74046.css",
-    "main.js": "/sciales-frontend/static/js/main.7960702f.js",
-    "static/js/787.cda612ba.chunk.js": "/sciales-frontend/static/js/787.cda612ba.chunk.js",
-    "index.html": "/sciales-frontend/index.html",
-    "main.c5a74046.css.map": "/sciales-frontend/static/css/main.c5a74046.css.map",
-    "main.7960702f.js.map": "/sciales-frontend/static/js/main.7960702f.js.map",
-    "787.cda612ba.chunk.js.map": "/sciales-frontend/static/js/787.cda612ba.chunk.js.map"
+    "main.css": "/static/css/main.c5a74046.css",
+    "main.js": "/static/js/main.e589a710.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "index.html": "/index.html",
+    "main.c5a74046.css.map": "/static/css/main.c5a74046.css.map",
+    "main.e589a710.js.map": "/static/js/main.e589a710.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5a74046.css",
-    "static/js/main.7960702f.js"
+    "static/js/main.e589a710.js"
   ]
 }

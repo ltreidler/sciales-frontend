@@ -42,7 +42,7 @@ export const NovelPage = ({ pageData, pageMedia, tabName }: NovelPageType) => {
         <Column width="60%">
           <StyledImage
             src={cover?.urls.medium}
-            minWidth={["20rem", "25rem"]}
+            minWidth={["20rem", "25rem", "27rem", "30rem"]}
             maxWidth="20rem"
           />
           <StyledButton onClick={() => setShowPages(!showPages)}>
@@ -60,10 +60,3 @@ export const NovelPage = ({ pageData, pageMedia, tabName }: NovelPageType) => {
     </>
   );
 };
-
-/*
-need to make sure the whole back of the page is blurred
-so need to add that class when the modal is open
-whenever show pages changes, run the function
-
-*/

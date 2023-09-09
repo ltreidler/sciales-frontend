@@ -41,15 +41,15 @@ export const NavLinks = ({
   const navStyle = css(
     mq({
       flexDirection: "column",
-      padding: ["3rem 3rem 3rem 1rem", "3rem 4rem", "3rem 4rem", "25vh 1rem"],
-      position: "fixed",
-      height: ["90vh", "90vh", "90vh", "60vh"],
+      padding: ["1rem 3rem 3rem 1rem", "1rem 4rem", "1rem 4rem", "12rem 2rem"],
+      position: type === "mobile" ? "fixed" : "absolute",
+      height: ["100%", "100%", "100%", "60vh"],
       justifyContent: "flex-start",
       alignItems: ["flex-end", "flex-end", "flex-end", "flex-start"],
       width: ["50vw", "50vw", "50vw", "20vw"],
       transform: [translateVal, translateVal, translateVal, "none"],
       backgroundColor: [nearWhite, nearWhite, nearWhite, "transparent"],
-      top: [0, 0],
+      top: 0,
       transition: "0.3s",
       ...(type === "mobile" ? mobileStyles : desktopStyles),
     })

@@ -14,8 +14,7 @@ export const Logo = () => {
       maxWidth: "12vw",
       minWidth: "9rem",
       padding: "1.5rem",
-      position: ["relative", "relative", "relative", "fixed", "fixed", "fixed"],
-      top: 0,
+      position: ["relative", "relative", "relative", "absolute"],
       left: 0,
     })
   );
